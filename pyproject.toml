@@ -1,0 +1,33 @@
+[project]
+name = "learn-langchain"
+version = "0.1.0"
+description = "Intelligent Agent for Company Data Extraction and PostgreSQL Integration using LCEL"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "langchain-community>=0.2.0",
+    "psycopg2-binary>=2.9.0",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.0.0",
+    "tiktoken>=0.5.0",
+    "python-dateutil>=2.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/learn_langchain"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
