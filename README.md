@@ -16,3 +16,4 @@
 #### list tables
 `\dt`
 
+<img width="1508" alt="image" src="https://github.com/user-attachments/assets/0ff1c551-329c-4fd7-8ba9-b21244f4df83" />
